@@ -6,9 +6,8 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.firstapp.constance.Constance
-import com.example.firstapp.databinding.ActivitySignUpBinding
-
+import com.example.notes.constance.Constance
+import com.example.notes.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var bindingClass : ActivitySignUpBinding
