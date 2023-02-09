@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="spiice"><b>Spiice</b></string>
+    <string name="discover_the_platform">Discover the platform</string>
+
+    <string name="you_have_an_account_log_in">You have an account? <b>Log-in</b></string>
+    <string name="launcher_sign_up">Sign-up</string>
+    <string name="launcher_log_in">Log-in</string>
+    <string name="log_in">Log-in</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="return_to_sign_up">Return to Sign-up</string>
+    <string name="skip">Skip</string>
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+
+    <string name="find_project">Find projects from companies \n everywhere in the world</string>
+    <string name="work_hard">Work hard and level up!</string>
+    <string name="make_money">Make money while working \non awesome projects</string>
+    <string name="chat">Chat with others freelancers \nand develop your network</string>
+    <string name="enjoy">Enjoy your progress!</string>
+
+
 </resources>

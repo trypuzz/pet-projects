@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7_SignUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_bubbles_7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_36"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="120dp"
+        android:text="@string/launcher_sign_up"
+        android:textSize="27sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="188dp"
+        app:boxBackgroundColor="@color/hintField"
+        app:boxCornerRadiusBottomEnd="@dimen/dp_8"
+        app:boxCornerRadiusBottomStart="@dimen/dp_8"
+        app:boxCornerRadiusTopEnd="@dimen/dp_8"
+        app:boxCornerRadiusTopStart="@dimen/dp_8"
+        app:boxStrokeWidth="@dimen/dp_0"
+        android:hint="@string/first_name"
+        app:hintTextColor="@color/hintText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_264"
+        app:boxBackgroundColor="@color/hintField"
+        app:boxCornerRadiusBottomEnd="@dimen/dp_8"
+        app:boxCornerRadiusBottomStart="@dimen/dp_8"
+        app:boxCornerRadiusTopEnd="@dimen/dp_8"
+        app:boxCornerRadiusTopStart="@dimen/dp_8"
+        app:boxStrokeWidth="@dimen/dp_0"
+        android:hint="@string/last_name"
+        app:hintTextColor="@color/hintText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_340"
+        app:boxBackgroundColor="@color/hintField"
+        app:boxCornerRadiusBottomEnd="@dimen/dp_8"
+        app:boxCornerRadiusBottomStart="@dimen/dp_8"
+        app:boxCornerRadiusTopEnd="@dimen/dp_8"
+        app:boxCornerRadiusTopStart="@dimen/dp_8"
+        app:boxStrokeWidth="@dimen/dp_0"
+        android:hint="@string/email"
+        app:hintTextColor="@color/hintText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_416"
+        app:boxBackgroundColor="@color/hintField"
+        app:boxCornerRadiusBottomEnd="@dimen/dp_8"
+        app:boxCornerRadiusBottomStart="@dimen/dp_8"
+        app:boxCornerRadiusTopEnd="@dimen/dp_8"
+        app:boxCornerRadiusTopStart="@dimen/dp_8"
+        app:boxStrokeWidth="@dimen/dp_0"
+        android:hint="@string/password"
+        app:hintTextColor="@color/hintText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:text="@string/sign_up"
+        android:textSize="@dimen/sp_18"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_602"
+        android:background="@drawable/btn_start" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_loginLauncher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:padding="@dimen/dp_5"
+        android:text="@string/you_have_an_account_log_in"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp_697"/>
+
+</FrameLayout>

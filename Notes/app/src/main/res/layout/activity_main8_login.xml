@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity8_LogIn">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_bubbles_8"/>
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="263dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="88dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"
+            android:layout_gravity="top"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="131dp"
+            android:text="@string/launcher_log_in"
+            android:textSize="@dimen/sp_27"
+            android:textAllCaps="false"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_192"
+        app:boxBackgroundColor="@color/hintField"
+        app:boxCornerRadiusBottomEnd="@dimen/dp_8"
+        app:boxCornerRadiusBottomStart="@dimen/dp_8"
+        app:boxCornerRadiusTopEnd="@dimen/dp_8"
+        app:boxCornerRadiusTopStart="@dimen/dp_8"
+        app:boxStrokeWidth="@dimen/dp_0"
+        android:hint="@string/email"
+        app:hintTextColor="@color/hintText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_268"
+        app:boxBackgroundColor="@color/hintField"
+        app:boxCornerRadiusBottomEnd="@dimen/dp_8"
+        app:boxCornerRadiusBottomStart="@dimen/dp_8"
+        app:boxCornerRadiusTopEnd="@dimen/dp_8"
+        app:boxCornerRadiusTopStart="@dimen/dp_8"
+        app:boxStrokeWidth="@dimen/dp_0"
+        android:hint="@string/password"
+        app:hintTextColor="@color/hintText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:text="@string/log_in"
+        android:textSize="@dimen/sp_18"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_602"
+        android:background="@drawable/btn_start" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signUpReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:padding="@dimen/dp_5"
+        android:text="@string/return_to_sign_up"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp_697"/>
+
+</FrameLayout>
