@@ -27,21 +27,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity6_Heart"
+            android:name=".EnjoyActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity5_Arrow"
+            android:name=".WorkHardActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity4_Phone"
+            android:name=".ChatActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

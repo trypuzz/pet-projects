@@ -10,4 +10,5 @@
     <color name="invis">#A6FFFFFF</color>
     <color name="hintText">#99879D</color>
     <color name="hintField">#FBEEFF</color>
+    <color name="errorHelperText">#FF0000</color>
 </resources>

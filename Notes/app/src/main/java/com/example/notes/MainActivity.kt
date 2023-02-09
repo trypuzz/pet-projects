@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() {
 
         val buttonStart = findViewById<Button>(R.id.button_start)
         buttonStart.setOnClickListener{
-            startActivity(Intent(this, MainActivity2_Globo::class.java))
+            startActivity(Intent(this, FindProjectActivity::class.java))
         }
 
         val buttonLogin = findViewById<Button>(R.id.btn_loginLauncher)
         buttonLogin.setOnClickListener{
-            startActivity(Intent(this, MainActivity2_Globo::class.java))
+            startActivity(Intent(this, LogInActivity::class.java))
         }
 
     }

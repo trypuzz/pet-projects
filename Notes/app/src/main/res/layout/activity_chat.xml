@@ -5,15 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity5_Arrow">
+    tools:context=".ChatActivity">
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_bubbles_5"/>
+        android:scaleType="centerCrop"
+        android:background="@drawable/background_bubbles_4"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_skip5"
+        android:id="@+id/btn_skip4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
@@ -38,23 +40,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|top"
-        android:background="@drawable/illustration_arrow"
-        android:layout_marginTop="@dimen/dp_138"/>
+        android:background="@drawable/illustration_phone"
+        android:layout_marginTop="@dimen/dp_170"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|center"
-        android:text="@string/work_hard"
-        android:gravity="center"
+        android:layout_gravity="center|top"
+        android:text="@string/chat"
         android:textSize="@dimen/sp_18"
+        android:gravity="center"
         android:layout_marginTop="@dimen/dp_643"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center"
-        android:background="@drawable/diaporama_5"
+        android:background="@drawable/diaporama_4"
         android:layout_marginTop="@dimen/dp_734"/>
+
 
 </FrameLayout>

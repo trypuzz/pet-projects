@@ -9,16 +9,16 @@ import android.os.Looper
 import android.view.View
 import android.widget.Button
 
-class MainActivity6_Heart : AppCompatActivity() {
+class EnjoyActivity : AppCompatActivity() {
 
     val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main6_heart)
+        setContentView(R.layout.activity_enjoy)
 
         handler.postDelayed({
-            startActivity(Intent(this, MainActivity7_SignUp::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
             finish()
         }, 10000)
 
@@ -28,7 +28,7 @@ class MainActivity6_Heart : AppCompatActivity() {
 
 
     private fun onClickSkip6(view: View) {
-        startActivity(Intent(this, MainActivity7_SignUp::class.java))
+        startActivity(Intent(this, SignUpActivity::class.java))
         handler.removeCallbacksAndMessages(null);
     }
 }

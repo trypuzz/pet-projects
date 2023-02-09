@@ -7,10 +7,10 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
-import com.example.firstapp.constance.Constance
-import com.example.firstapp.databinding.ActivityLogInBinding
+import com.example.notes.constance.Constance
+import com.example.notes.databinding.ActivityLogInBinding
 
-class MainActivity8_LogIn : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
 
     lateinit var bindingClass: ActivityLogInBinding

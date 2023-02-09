@@ -8,13 +8,13 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity2_Globo : AppCompatActivity() {
+class FindProjectActivity : AppCompatActivity() {
 
     val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2_globo)
+        setContentView(R.layout.activity_find_projects)
 
         handler.postDelayed({
             startActivity(Intent(this, MainActivity3_Money::class.java))

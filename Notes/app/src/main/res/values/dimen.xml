@@ -36,4 +36,20 @@
     <dimen name="sp_27">27sp</dimen>
     <dimen name="sp_32">32sp</dimen>
     <dimen name="sp_96">96sp</dimen>
+
+    <dimen name="dp_257">257dp</dimen>
+    <dimen name="dp_37">37dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_41">41dp</dimen>
+    <dimen name="dp_282">282dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_147">147dp</dimen>
+    <dimen name="dp_146">146dp</dimen>
+    <dimen name="dp_691">691dp</dimen>
+    <dimen name="dp_656">656dp</dimen>
+    <dimen name="dp_94">94dp</dimen>
+    <dimen name="dp_130">130dp</dimen>
 </resources>

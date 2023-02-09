@@ -8,16 +8,16 @@ import android.os.Looper
 import android.view.View
 import android.widget.Button
 
-class MainActivity5_Arrow : AppCompatActivity() {
+class WorkHardActivity : AppCompatActivity() {
 
     val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main5_arrow)
+        setContentView(R.layout.activity_work_hard)
 
         handler.postDelayed({
-            startActivity(Intent(this, MainActivity6_Heart::class.java))
+            startActivity(Intent(this, EnjoyActivity::class.java))
             finish()
         }, 10000)
 
@@ -27,7 +27,7 @@ class MainActivity5_Arrow : AppCompatActivity() {
 
 
     private fun onClickSkip5(view: View) {
-        startActivity(Intent(this, MainActivity6_Heart::class.java))
+        startActivity(Intent(this, EnjoyActivity::class.java))
         handler.removeCallbacksAndMessages(null);
     }
 }

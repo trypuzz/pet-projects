@@ -7,17 +7,18 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.Button
+import com.example.notes.constance.Constance
 
-class MainActivity4_Phone : AppCompatActivity() {
+class ChatActivity : AppCompatActivity() {
 
     val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main4_phone)
+        setContentView(R.layout.activity_chat)
 
         handler.postDelayed({
-            startActivity(Intent(this, MainActivity5_Arrow::class.java))
+            startActivity(Intent(this, WorkHardActivity::class.java))
             finish()
         }, Constance.TIME_SLIDE_ACTIVITY)
 
@@ -26,7 +27,7 @@ class MainActivity4_Phone : AppCompatActivity() {
     }
 
     private fun onClickSkip4(view: View) {
-        startActivity(Intent(this, MainActivity5_Arrow::class.java))
+        startActivity(Intent(this, WorkHardActivity::class.java))
         handler.removeCallbacksAndMessages(null);
     }
 }

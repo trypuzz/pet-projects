@@ -8,16 +8,16 @@ import android.os.Looper
 import android.view.View
 import android.widget.Button
 
-class MainActivity3_Money : AppCompatActivity() {
+class MakeMoneyActivity : AppCompatActivity() {
 
     val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main3_money)
+        setContentView(R.layout.activity_make_money)
 
         handler.postDelayed({
-            startActivity(Intent(this, MainActivity4_Phone::class.java))
+            startActivity(Intent(this, ChatActivity::class.java))
             finish()
         }, 10000)
 
@@ -26,7 +26,7 @@ class MainActivity3_Money : AppCompatActivity() {
     }
 
     private fun onClickSkip3(view: View) {
-        startActivity(Intent(this, MainActivity4_Phone::class.java))
+        startActivity(Intent(this, ChatActivity::class.java))
         handler.removeCallbacksAndMessages(null);
     }
 
