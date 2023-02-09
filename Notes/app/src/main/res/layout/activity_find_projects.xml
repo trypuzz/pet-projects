@@ -5,24 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2_Globo">
+    tools:context=".FindProjectActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_bubbles_2"/>
 
-    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_skip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="@dimen/dp_16"
-        android:layout_marginEnd="@dimen/dp_15"
-        android:background="@null"
-        android:text="@string/skip"
-        android:textAllCaps="false"
-        android:textColor="@color/black"/>
+        style="@style/ButtonSkipLayoutStyle"/>
 
     <TextView
         android:layout_width="wrap_content"

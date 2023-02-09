@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.example.notes.constance.Constance
 import com.example.notes.databinding.ActivityLogInBinding
 
-class LoginActivity : AppCompatActivity() {
+class LogInActivity : AppCompatActivity() {
 
 
     lateinit var bindingClass: ActivityLogInBinding
