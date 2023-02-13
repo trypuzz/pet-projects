@@ -13,6 +13,18 @@
         android:layout_height="match_parent"
         android:background="@drawable/background_bubbles_7" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="@dimen/dp_412"
+        android:layout_marginTop="@dimen/dp_88"
+        android:layout_marginBottom="@dimen/dp_312"
+        style="@style/cardViewBlock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"

@@ -11,4 +11,6 @@
     <color name="hintText">#99879D</color>
     <color name="hintField">#FBEEFF</color>
     <color name="errorHelperText">#FF0000</color>
+    <color name="backgroungMain">#E5E5E5</color>
+    <color name="backgroungCardView">#3DFFFFFF</color>
 </resources>

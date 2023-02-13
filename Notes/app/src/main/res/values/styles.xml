@@ -49,4 +49,14 @@
         <item name="boxStrokeWidth">@dimen/dp_0</item>
     </style>
 
+    <style name="cardViewBlock">
+        <item name="cardBackgroundColor">@color/backgroungCardView</item>
+        <item name="cardCornerRadius">@dimen/dp_8</item>
+        <item name="cardElevation">@dimen/dp_0</item>
+    </style>
+
+    <style name="DataPicker">
+        <item name="android:textSize">@dimen/DataPickerTextSize</item>
+    </style>
+
 </resources>

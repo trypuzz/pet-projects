@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroungMain"
+    tools:context=".AddNoteActivity">
+
+    <ImageView
+        android:id="@+id/imageArrow"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/arrow_back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/dp_63"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="@null"
+        android:padding="@dimen/dp_1"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/hintText"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintEnd_toEndOf="@dimen/dp_32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_82"
+        android:layout_marginEnd="@dimen/dp_250"
+        android:text="@string/add_note"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_25"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titlesContainer"
+        style="@style/TextFieldTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_154"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:hint="@string/titlesHint"
+        app:counterMaxLength="25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titlesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageContainer"
+        style="@style/TextFieldTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_39"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:hint="@string/messageHint"
+        app:layout_constraintEnd_toEndOf="@+id/titlesContainer"
+        app:layout_constraintStart_toStartOf="@+id/titlesContainer"
+        app:layout_constraintTop_toBottomOf="@+id/titlesContainer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add"
+        style="@style/ButtonLayoutStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="@dimen/dp_49"
+        android:layout_marginTop="@dimen/dp_215"
+        android:layout_marginEnd="@dimen/dp_63"
+        android:layout_marginBottom="@dimen/dp_41"
+        android:text="@string/addButton"
+        app:layout_constraintEnd_toEndOf="@+id/messageContainer"
+        app:layout_constraintStart_toStartOf="@+id/messageContainer"
+        app:layout_constraintTop_toBottomOf="@+id/messageContainer" />
+
+    <DatePicker
+        android:id="@+id/PickedDate"
+        android:layout_width="357dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="40dp"
+        android:calendarViewShown="false"
+        style="@style/DataPicker"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageContainer" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="@dimen/dp_48"
+        android:text=""
+        android:hint="@string/dateHint"
+        app:layout_constraintEnd_toEndOf="@+id/messageContainer"
+        app:layout_constraintStart_toStartOf="@+id/messageContainer"
+        app:layout_constraintTop_toBottomOf="@+id/messageContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,3 +30,4 @@ class FindProjectActivity : AppCompatActivity() {
         startActivity(Intent(this, MakeMoneyActivity::class.java))
         handler.removeCallbacksAndMessages(null);
     }
+}

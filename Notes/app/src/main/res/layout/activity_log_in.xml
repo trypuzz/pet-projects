@@ -12,23 +12,35 @@
         android:layout_height="match_parent"
         android:background="@drawable/background_bubbles_8" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/dp_343"
+        android:layout_height="@dimen/dp_310"
+        android:layout_marginTop="@dimen/dp_88"
+        android:layout_marginBottom="@dimen/dp_461"
+        style="@style/cardViewBlock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_36"
         android:layout_gravity="top"
-        android:layout_marginStart="@dimen/dp_147"
-        android:layout_marginTop="@dimen/dp_120"
-        android:layout_marginEnd="@dimen/dp_146"
-        android:layout_marginBottom="@dimen/dp_656"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="195dp"
         android:text="@string/launcher_log_in"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="@dimen/sp_27"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailContainer"

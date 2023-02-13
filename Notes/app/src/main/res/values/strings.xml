@@ -14,6 +14,16 @@
     <string name="return_to_sign_up">Return to Sign-up</string>
     <string name="skip">Skip</string>
 
+    <string name="add">Add</string>
+    <string name="message">Message</string>
+    <string name="add_note">Add note</string>
+    <string name="dateHint">ДД.ММ.ГГГГ</string>
+    <string name="messageHint">Message</string>
+    <string name="titlesHint">Titles</string>
+    <string name="add_new">Add new</string>
+    <string name="title">Title</string>
+    <string name="addButton">Add</string>
+
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
 
@@ -22,6 +32,16 @@
     <string name="make_money">Make money while working \non awesome projects</string>
     <string name="chat">Chat with others freelancers \nand develop your network</string>
     <string name="enjoy">Enjoy your progress!</string>
+
+    <style name="cardViewBlock">
+        <item name="cardBackgroundColor">@color/backgroungCardView</item>
+        <item name="cardCornerRadius">@dimen/dp_8</item>
+        <item name="cardElevation">@dimen/dp_0</item>
+    </style>
+
+    <style name="DataPicker">
+        <item name="android:textSize">@dimen/DataPickerTextSize</item>
+    </style>
 
 
 </resources>
