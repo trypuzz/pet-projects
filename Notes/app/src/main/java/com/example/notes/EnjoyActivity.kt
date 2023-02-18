@@ -1,6 +1,5 @@
 package com.example.notes
 
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +7,8 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.Button
+import com.example.notes.constance.Constance
+
 
 class EnjoyActivity : AppCompatActivity() {
 
@@ -20,12 +21,11 @@ class EnjoyActivity : AppCompatActivity() {
         handler.postDelayed({
             startActivity(Intent(this, SignUpActivity::class.java))
             finish()
-        }, 10000)
+        }, Constance.TIME_SLIDE_ACTIVITY)
 
         val buttonSkip6 = findViewById<Button>(R.id.btn_skip6)
         buttonSkip6.setOnClickListener(::onClickSkip6)
     }
-
 
     private fun onClickSkip6(view: View) {
         startActivity(Intent(this, SignUpActivity::class.java))

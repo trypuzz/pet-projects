@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.Button
+import com.example.notes.constance.Constance
 
 class MakeMoneyActivity : AppCompatActivity() {
 
@@ -19,7 +20,7 @@ class MakeMoneyActivity : AppCompatActivity() {
         handler.postDelayed({
             startActivity(Intent(this, ChatActivity::class.java))
             finish()
-        }, 10000)
+        }, Constance.TIME_SLIDE_ACTIVITY)
 
         val buttonSkip3 = findViewById<Button>(R.id.btn_skip3)
         buttonSkip3.setOnClickListener(::onClickSkip3)

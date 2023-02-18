@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.notes.constance.Constance
 
+
 class FindProjectActivity : AppCompatActivity() {
 
     val handler = Handler(Looper.getMainLooper())
@@ -31,3 +32,6 @@ class FindProjectActivity : AppCompatActivity() {
         handler.removeCallbacksAndMessages(null);
     }
 }
+
+
+

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:errorEnabled="true"
-    tools:context=".SignUpActivity">
+    tools:context=".ui.registration.SignUpActivity">
 
     <ImageView
         android:id="@+id/imageView2"

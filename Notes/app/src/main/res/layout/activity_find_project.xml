@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindProjectActivity">
+    tools:context=".ui.FindProjectActivity">
 
     <ImageView
         android:id="@+id/btn_skip2"

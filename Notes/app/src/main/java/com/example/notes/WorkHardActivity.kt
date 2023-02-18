@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.Button
+import com.example.notes.constance.Constance
 
 class WorkHardActivity : AppCompatActivity() {
 
@@ -19,15 +20,15 @@ class WorkHardActivity : AppCompatActivity() {
         handler.postDelayed({
             startActivity(Intent(this, EnjoyActivity::class.java))
             finish()
-        }, 10000)
+        }, Constance.TIME_SLIDE_ACTIVITY)
 
         val buttonSkip5 = findViewById<Button>(R.id.btn_skip5)
         buttonSkip5.setOnClickListener(::onClickSkip5)
     }
 
-
     private fun onClickSkip5(view: View) {
         startActivity(Intent(this, EnjoyActivity::class.java))
         handler.removeCallbacksAndMessages(null);
     }
+
 }

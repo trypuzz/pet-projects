@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragmentAddTask_11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroungMain"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_menu"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_17"
+            android:layout_marginTop="25dp"
+            android:text="@string/add_task"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_39"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/messageContainer"
+            style="@style/TextFieldTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_282"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:background="@drawable/background_text_field"
+            android:hint="@string/messageHint"
+            app:counterMaxLength="25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/titleContainer"
+            style="@style/TextFieldTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_183"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:background="@drawable/background_text_field"
+            android:hint="@string/titlesHint"
+            app:layout_constraintEnd_toEndOf="@+id/titlesContainer"
+            app:layout_constraintStart_toStartOf="@+id/titlesContainer"
+            app:layout_constraintTop_toBottomOf="@+id/titlesContainer">
+
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add"
+            style="@style/ButtonLayoutStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginStart="@dimen/dp_63"
+            android:layout_marginTop="@dimen/dp_580"
+            android:layout_marginEnd="@dimen/dp_63"
+            android:layout_marginBottom="@dimen/dp_41"
+            android:text="@string/addButton"
+            app:layout_constraintEnd_toEndOf="@+id/messageContainer"
+            app:layout_constraintStart_toStartOf="@+id/messageContainer"
+            app:layout_constraintTop_toBottomOf="@+id/messageContainer" />
+
+        <TextView
+            android:id="@+id/btnDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_416"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/choose_date"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageView
+            android:id="@+id/img_calendar"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_180"
+            android:layout_marginTop="@dimen/dp_470"
+            android:background="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/tvReportAddTaskOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="530dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/add_task_seccessfull"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:textColor="@color/bg_add_task_successfull"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tvReportAddTaskFalse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="530dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/add_task_error"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:textColor="@color/errorHelperText"
+            android:textSize="@dimen/sp_18" />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_menu"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

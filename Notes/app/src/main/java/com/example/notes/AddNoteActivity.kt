@@ -15,8 +15,8 @@ class AddNoteActivity : AppCompatActivity() {
         bindingClass = ActivityAddNoteBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
         bindingClass.btnBack.setOnClickListener {
-            startActivity(Intent(this, TaskActivity::class.java))
-        }
+        startActivity(Intent(this, TaskActivity::class.java))
+    }
         initButtons()
     }
 
@@ -29,7 +29,9 @@ class AddNoteActivity : AppCompatActivity() {
             setResult(RESULT_OK, editIntent)
             taskRepository.addNewTask(createTask)
             finish()
-
         }
     }
 }
+
+
+

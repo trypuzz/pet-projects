@@ -1,47 +1,95 @@
 <resources>
-    <string name="app_name">Notes</string>
+    <string name="app_name">FirstApp</string>
     <string name="spiice"><b>Spiice</b></string>
     <string name="discover_the_platform">Discover the platform</string>
-
     <string name="you_have_an_account_log_in">You have an account? <b>Log-in</b></string>
-    <string name="launcher_sign_up">Sign-up</string>
-    <string name="launcher_log_in">Log-in</string>
-    <string name="log_in">Log-in</string>
-
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="sign_up">Sign-up</string>
-    <string name="return_to_sign_up">Return to Sign-up</string>
-    <string name="skip">Skip</string>
-
-    <string name="add">Add</string>
-    <string name="message">Message</string>
-    <string name="add_note">Add note</string>
-    <string name="dateHint">ДД.ММ.ГГГГ</string>
-    <string name="messageHint">Message</string>
-    <string name="titlesHint">Titles</string>
-    <string name="add_new">Add new</string>
-    <string name="title">Title</string>
-    <string name="addButton">Add</string>
-
-    <string name="first_name">First name</string>
-    <string name="last_name">Last name</string>
-
-    <string name="find_project">Find projects from companies \n everywhere in the world</string>
+    <string name="find_project">Find project from companies \n everywhere in the world</string>
     <string name="work_hard">Work hard and level up!</string>
     <string name="make_money">Make money while working \non awesome projects</string>
     <string name="chat">Chat with others freelancers \nand develop your network</string>
     <string name="enjoy">Enjoy your progress!</string>
+    <string name="skip">Skip</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="launcher_sign_up">Sign-up</string>
+    <string name="launcher_log_in">Log-in</string>
+    <string name="log_in">Log-in</string>
+    <string name="return_to_sign_up">Return to Sign-up</string>
+    <string name="add">Add</string>
+    <string name="message">Message</string>
+    <string name="add_task">Add task</string>
+    <string name="dateHint">ДД.ММ.ГГГГ</string>
+    <string name="messageHint">Message</string>
+    <string name="titlesHint">Task</string>
+    <string name="add_new">Add new</string>
+    <string name="title">Title</string>
+    <string name="addButton">Add</string>
 
-    <style name="cardViewBlock">
-        <item name="cardBackgroundColor">@color/backgroungCardView</item>
-        <item name="cardCornerRadius">@dimen/dp_8</item>
-        <item name="cardElevation">@dimen/dp_0</item>
-    </style>
+    <string name="password_blank">Поле пароле не может быть пустым</string>
+    <string name="password_min_size">Минимальное количество символов 6</string>
+    <string name="password_max_size">Максимальное количество символов 50</string>
+    <string name="password_lower_case_symbol">Пароль должен содержать как минимум одну маленькую букву</string>
+    <string name="password_upper_case_symbol">Пароль должен содержать как минимум одну большую букву</string>
+    <string name="password_spec_symbol">Пароль должен содержать как минимум один спец.символ (@#$%^&amp;+=)</string>
+    <string name="password_number">Пароль должен содержать как минимум одну цифру</string>
 
-    <style name="DataPicker">
-        <item name="android:textSize">@dimen/DataPickerTextSize</item>
-    </style>
+    <string name="email_blank">Поле Email не может быть пустым</string>
+    <string name="email_wrong_type">Неверная форма Email</string>
 
+    <string name="name_blank">Поле не может быть пустым</string>
+    <string name="lastname_blank">Поле не может быть пустым</string>
+    <string name="NameAccount">Текущий пользователь:</string>
+
+    <string-array name="array_category_task">
+        <item>Все</item>
+        <item>Запланированные</item>
+        <item>Просроченные</item>
+    </string-array>
+
+    <string name="taskName">Поле не может быть пустым</string>
+    <string name="message_task">Поле не может быть пустым</string>
+    <string name="choosen_intent">Выберите приложение</string>
+    <string name="delete_task_question">Вы действительно хотите удалить задачу?</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="back">Back</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task_information">Task information</string>
+    <string name="plan_date">Запланированная дата:</string>
+
+    //диалоговое окно
+    <string name="dialog_message">Удалить запись?</string>
+    <string name="btn_delete"><b>Удалить</b></string>
+    <string name="btn_exit"><b>Выйти</b></string>
+    <string name="btn_cancel"><b>Отмена</b></string>
+    <string name="all_task">All Tasks</string>
+    <string name="text_search">Введите текст...</string>
+    <string name="task_menu">Меню задач</string>
+    <string name="search_menu">Поиск</string>
+    <string name="add_task_menu">Добавить задачу</string>
+    <string name="profile_menu">Профиль</string>
+    <string name="choose_date">Выберите дату</string>
+    <string name="add_task_seccessfull">Задача успешно добавлена</string>
+    <string name="add_task_error">Ошибка! Задача не создана</string>
+    <string name="report">Отчет</string>
+
+    <string name="user_no_registration">Пользователь не зарегестрирован \n Необходима регистрация</string>
+    <string name="app_have_this_user">Пользователь с таким Email уже зарегистрирован</string>
+    <string name="accaunt_deleted">Профиль удален</string>
+    <string name="delete_accaunt">Удалить аккаунт?</string>
+    <string name="logoyt_accaunt">Выйти из профиля?</string>
+
+    <string name="delete_all_task">Удалить все задачи?</string>
+    <string name="all_task_deleted">Все задачи удалены</string>
+    <string name="logout">Logout</string>
+    <string name="delete_all_task_tv">Delete all task</string>
+    <string name="query_task">Количество задач</string>
+    <string name="delete_profile">Delete profile</string>
+    <string name="user_name">Title Task</string>
+    <string name="profile">Profile</string>
 
 </resources>

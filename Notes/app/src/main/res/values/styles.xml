@@ -55,8 +55,23 @@
         <item name="cardElevation">@dimen/dp_0</item>
     </style>
 
-    <style name="DataPicker">
-        <item name="android:textSize">@dimen/DataPickerTextSize</item>
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="text_bottom_sheet">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProfileNavigationText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp_39</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

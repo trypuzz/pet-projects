@@ -12,7 +12,6 @@ import com.example.notes.databinding.ActivityLogInBinding
 
 class LogInActivity : AppCompatActivity() {
 
-
     lateinit var bindingClass: ActivityLogInBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -103,9 +102,12 @@ class LogInActivity : AppCompatActivity() {
 
     fun onLogIn(view: View) {
         submitForm()
+        startActivity(Intent(this, AddNoteActivity::class.java))
     }
 
     fun onClickSignUp(view: View){
         startActivity(Intent(this, SignUpActivity::class.java))
     }
 }
+
+
