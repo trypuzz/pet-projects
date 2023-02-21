@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/disney_baymax">
+
+    <ImageView
+        android:id="@+id/image_disney_heroes"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_65"
+        android:src="@drawable/disney_heroes_text"
+        app:layout_constraintBottom_toTopOf="@id/list_heroes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_my_heroes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_all_heroes"
+        android:layout_width="@dimen/dp_65"
+        android:layout_height="@dimen/dp_65"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_38"
+        android:background="@drawable/bg_image_button_checked"
+        android:src="@drawable/ic_select_all"
+        android:tint="@color/color_icon_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_my_heroes"
+        android:layout_width="@dimen/dp_65"
+        android:layout_height="@dimen/dp_65"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_38"
+        android:background="@drawable/bg_image_button_unchecked"
+        android:src="@drawable/ic_baseline_favorite_border_30"
+        app:layout_constraintStart_toEndOf="@id/button_all_heroes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_all"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/all"
+        android:textColor="@color/color_image_button_checked"
+        app:layout_constraintEnd_toEndOf="@id/button_all_heroes"
+        app:layout_constraintStart_toStartOf="@+id/button_all_heroes"
+        app:layout_constraintTop_toBottomOf="@id/button_all_heroes" />
+
+    <TextView
+        android:id="@+id/text_my"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/my"
+        android:textColor="@color/color_image_button_unchecked"
+        app:layout_constraintEnd_toEndOf="@id/button_my_heroes"
+        app:layout_constraintStart_toStartOf="@+id/button_my_heroes"
+        app:layout_constraintTop_toBottomOf="@id/button_my_heroes" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_heroes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_all" />
+
+    <com.example.disneyheroes.ui.banners.BannerViewNetworkError
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
