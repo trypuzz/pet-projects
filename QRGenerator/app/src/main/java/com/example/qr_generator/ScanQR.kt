@@ -3,22 +3,24 @@ package com.example.qr_generator
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
-import com.budiyev.android.codescanner.AutoFocusMode
-import com.budiyev.android.codescanner.CodeScanner
-import com.budiyev.android.codescanner.CodeScannerView
-import com.budiyev.android.codescanner.DecodeCallback
-import com.budiyev.android.codescanner.ErrorCallback
-import com.budiyev.android.codescanner.ScanMode
-import com.google.zxing.Result
+import androidx.appcompat.app.AppCompatActivity
+import com.budiyev.android.codescanner.*
 import me.dm7.barcodescanner.zbar.ZBarScannerView
-import me.dm7.barcodescanner.zxing.ZXingScannerView
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
     private lateinit var codeScanner: CodeScanner
+    private fun containsURL(content: String): Boolean {
+        val REGEX = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]"
+        val p: Pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE)
+        val m: Matcher = p.matcher(content)
+        return m.find()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +45,11 @@ class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
                 var clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
                 var clip = ClipData.newPlainText("label", it.text)
                 clipboard.setPrimaryClip(clip)
+                val isContain = containsURL(it.text)
+                if (isContain){
+                    val openPage = Intent(Intent.ACTION_VIEW, Uri.parse(it.text))
+                    startActivity(openPage)
+                }
             }
             finish()
         }
