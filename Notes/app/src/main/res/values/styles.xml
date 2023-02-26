@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonSkipLayoutStyle">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginTop">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_15</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">@string/skip</item>
+    </style>
+
+    <style name="TextSpiiceLayoutStyle">
+        <item name="android:layout_gravity">center|top</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:text">@string/spiice</item>
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/dp_48</item>
+    </style>
+
+    <style name="ButtonLayoutStyle">
+        <item name="android:background">@drawable/btn_start</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="TextRegistrationLayoutStyle">
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="TextInfoLayoutStyle">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextFieldTextInputLayoutStyle">
+        <item name="boxBackgroundColor">@color/hintField</item>
+        <item name="hintTextColor">@color/hintText</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp_8</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_8</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp_8</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp_8</item>
+        <item name="boxStrokeWidth">@dimen/dp_0</item>
+    </style>
+
+    <style name="cardViewBlock">
+        <item name="cardBackgroundColor">@color/backgroungCardView</item>
+        <item name="cardCornerRadius">@dimen/dp_8</item>
+        <item name="cardElevation">@dimen/dp_0</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="text_bottom_sheet">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProfileNavigationText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp_39</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

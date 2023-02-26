@@ -7,4 +7,22 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="invis">#A6FFFFFF</color>
+    <color name="hintText">#99879D</color>
+    <color name="hintField">#FBEEFF</color>
+    <color name="errorHelperText">#FF0000</color>
+    <color name="backgroungMain">#E5E5E5</color>
+    <color name="backgroungCardView">#3DFFFFFF</color>
+    <color name="bg_item_rw">#3DFBB3F2</color>
+    <color name="bg_add_task_successfull">#FF41A545</color>
+
+    //для bottomsheetfragment
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#ECECEC</color>
+
+
 </resources>

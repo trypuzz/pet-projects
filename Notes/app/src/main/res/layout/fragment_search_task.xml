@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SearchTaskFragment">
+
+
+    <FrameLayout
+        android:id="@+id/fragmentSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroungMain"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_menu"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/ProfileNavigationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_17"
+            android:layout_marginTop="25dp"
+            android:text="Search">
+
+        </TextView>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_field"
+            android:layout_width="@dimen/dp_345"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_130"
+            android:background="@drawable/searchview_background"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/text_search"
+            app:queryBackground="@android:color/transparent"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_215"
+            android:background="@drawable/filter"
+            android:padding="@dimen/dp_5" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/array_category_task"
+            android:layout_marginStart="@dimen/dp_75"
+            android:layout_marginTop="@dimen/dp_210"
+            />
+
+        <androidx.cardview.widget.CardView
+            style="@style/cardViewBlock"
+            android:layout_width="@dimen/dp_343"
+            android:layout_height="@dimen/dp_310"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="@dimen/dp_318" />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_menu"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

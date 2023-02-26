@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/taskMenu"
+        android:icon="@drawable/menu"
+        android:title="@string/task_menu" />
+
+    <item
+        android:id="@+id/addTaskMenu"
+        android:icon="@drawable/addtask"
+        android:title="@string/add_task_menu" />
+
+    <item
+        android:id="@+id/profileMenu"
+        android:icon="@drawable/profile"
+        android:title="@string/profile_menu" />
+
+</menu>
