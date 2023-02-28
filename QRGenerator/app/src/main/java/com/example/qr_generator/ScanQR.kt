@@ -15,13 +15,6 @@ import java.util.regex.Pattern
 
 class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
     private lateinit var codeScanner: CodeScanner
-    private fun containsURL(content: String): Boolean {
-        val REGEX = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]"
-        val p: Pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE)
-        val m: Matcher = p.matcher(content)
-        return m.find()
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan_qr)
@@ -29,16 +22,15 @@ class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
 
         codeScanner = CodeScanner(this, scannerView)
 
-        // Parameters (default values)
-        codeScanner.camera = CodeScanner.CAMERA_BACK // or CAMERA_FRONT or specific camera id
-        codeScanner.formats = CodeScanner.ALL_FORMATS // list of type BarcodeFormat,
-        // ex. listOf(BarcodeFormat.QR_CODE)
-        codeScanner.autoFocusMode = AutoFocusMode.SAFE // or CONTINUOUS
-        codeScanner.scanMode = ScanMode.SINGLE // or CONTINUOUS or PREVIEW
-        codeScanner.isAutoFocusEnabled = true // Whether to enable auto focus or not
-        codeScanner.isFlashEnabled = false // Whether to enable flash or not
+        codeScanner.camera = CodeScanner.CAMERA_BACK //back or front camera
+        codeScanner.formats = CodeScanner.ALL_FORMATS
 
-        // Callbacks
+        codeScanner.autoFocusMode = AutoFocusMode.SAFE // autofocus also can be CONTINUOUS
+        codeScanner.scanMode = ScanMode.SINGLE // can be CONTINUOUS or PREVIEW
+        codeScanner.isAutoFocusEnabled = true
+        codeScanner.isFlashEnabled = false
+
+        //result of program
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
                 Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
@@ -53,7 +45,7 @@ class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
             }
             finish()
         }
-        codeScanner.errorCallback = ErrorCallback { // or ErrorCallback.SUPPRESS
+        codeScanner.errorCallback = ErrorCallback {
             runOnUiThread {
                 Toast.makeText(
                     this, "Camera initialization error: ${it.message}",
@@ -66,17 +58,20 @@ class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
             codeScanner.startPreview()
         }
     }
-
+    private fun containsURL(content: String): Boolean {
+        val REGEX = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]"
+        val p: Pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE)
+        val m: Matcher = p.matcher(content)
+        return m.find()
+    }
     override fun onResume() {
         super.onResume()
         codeScanner.startPreview()
     }
-
     override fun onPause() {
         codeScanner.releaseResources()
         super.onPause()
     }
-
     override fun handleResult(p0: me.dm7.barcodescanner.zbar.Result?) {
         TODO("Not yet implemented")
     }

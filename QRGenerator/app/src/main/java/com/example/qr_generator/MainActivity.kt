@@ -30,11 +30,9 @@ class MainActivity : AppCompatActivity() {
         bScanQR?.setOnClickListener{
             startActivity(Intent(this, ScanQR::class.java))
         }
-
     }
 
     private fun generateQRCode(text: String) {
-
         val qrGenerator = QRGEncoder(text, null, QRGContents.Type.TEXT, 700)
         try {
             val bMap = qrGenerator.bitmap
