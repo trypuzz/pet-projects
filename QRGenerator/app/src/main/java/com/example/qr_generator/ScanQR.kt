@@ -30,7 +30,6 @@ class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
         codeScanner.isAutoFocusEnabled = true
         codeScanner.isFlashEnabled = false
 
-        //result of program
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
                 Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()

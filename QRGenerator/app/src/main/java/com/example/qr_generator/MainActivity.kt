@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
         bScanQR = findViewById(R.id.bScan)
         editText = findViewById(R.id.editText)
         bGenerate?.isEnabled = false
-
+        //https://github.com/trypuzz
         bGenerate?.setOnClickListener {
-            generateQRCode(editText?.text.toString())
+            generateQRCode("https://github.com/trypuzz")//editText?.text.toString())
         }
         bScanQR?.setOnClickListener {
             startActivity(Intent(this, ScanQR::class.java))
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             val bMap = qrGenerator.bitmap
             im?.setImageBitmap(bMap)
         } catch (_: java.lang.Exception) {
+
         }
     }
 
