@@ -41,6 +41,7 @@ dependencies {
     implementation 'com.github.androidmads:QRGenerator:1.0.1'
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
     implementation 'me.dm7.barcodescanner:zbar:1.8.4'
+
     implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
