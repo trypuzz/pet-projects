@@ -10,7 +10,6 @@ import android.webkit.WebView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-
 import com.prof.rssparser.Article
 import com.squareup.picasso.Picasso
 import java.text.SimpleDateFormat
@@ -25,11 +24,6 @@ class ArticleAdapter(private var articles: List<Article>) :
 
     override fun onBindViewHolder(holder: ArticleAdapter.ViewHolder, position: Int) =
         holder.bind(articles[position])
-
-    fun clearArticles() {
-        articles = emptyList()
-        notifyDataSetChanged()
-    }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -55,12 +49,18 @@ class ArticleAdapter(private var articles: List<Article>) :
             } catch (_: Exception) {
             }
 
-            title.text = article.title
+            if (article.title != null) {
+                title.text = article.title
+            }
 
-            Picasso.get()
-                .load(article.image)
-                .placeholder(R.drawable.placeholder)
-                .into(image)
+            if (article.image != null) {
+                Picasso.get()
+                    .load(article.image)
+                    .placeholder(R.drawable.placeholder)
+                    .into(image)
+            } else {
+                image.visibility = View.GONE
+            }
 
             pubDate.text = pubDateString
 
@@ -75,7 +75,6 @@ class ArticleAdapter(private var articles: List<Article>) :
                 articleView.loadDataWithBaseURL(
                     null,
                     "<style>img{display: inline; height: auto; max-width: 100%;} " +
-
                             "</style>\n" + "<style>iframe{ height: auto; width: auto;}" + "</style>\n" + article.content,
                     null,
                     "utf-8",

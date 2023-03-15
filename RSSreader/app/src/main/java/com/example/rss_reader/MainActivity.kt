@@ -3,19 +3,11 @@ package com.example.rss_reader
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.net.NetworkInfo
-import android.os.Build
 import android.os.Bundle
-import android.os.StrictMode
-import android.os.StrictMode.VmPolicy
-import android.text.Html
-import android.text.method.LinkMovementMethod
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.ProgressBar
-import android.widget.RelativeLayout
-import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +17,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.rss_reader.util.AlertDialogHelper
-import com.google.android.material.snackbar.Snackbar
 import com.prof.rssparser.Parser
 import org.xml.sax.*
 
@@ -62,6 +53,8 @@ class MainActivity : AppCompatActivity() {
             if (channel != null) {
                 if (channel.title != null) {
                     title = channel.title
+                } else {
+                    title = "Empty XML Feed"
                 }
                 adapter = ArticleAdapter(channel.articles)
                 recyclerView.adapter = adapter
@@ -76,9 +69,7 @@ class MainActivity : AppCompatActivity() {
         swipeLayout.canChildScrollUp()
 
         swipeLayout.setOnRefreshListener {
-            adapter.clearArticles()
-            swipeLayout.isRefreshing = true
-            viewModel.fetchFeed(parser)
+            swipeLayout.isRefreshing = false
         }
 
         if (!isOnline()) {
@@ -86,7 +77,8 @@ class MainActivity : AppCompatActivity() {
             builder.setMessage(R.string.alert_message)
                 .setTitle(R.string.alert_title)
                 .setCancelable(false)
-                .setPositiveButton(R.string.alert_positive
+                .setPositiveButton(
+                    R.string.alert_positive
                 ) { _, _ -> finish() }
 
             val alert = builder.create()
@@ -105,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
         val id = item.itemId
 
-      if (id == R.id.action_raw_parser) {
+        if (id == R.id.action_raw_parser) {
             AlertDialogHelper(
                 title = R.string.alert_raw_parser_title,
                 positiveButton = R.string.alert_raw_parser_positive,
@@ -120,8 +112,9 @@ class MainActivity : AppCompatActivity() {
 
     @Suppress("DEPRECATION")
     fun isOnline(): Boolean {
-        val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        val network =  connectivityManager.activeNetwork ?: return false
+        val connectivityManager =
+            getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val network = connectivityManager.activeNetwork ?: return false
         val activeNetwork = connectivityManager.getNetworkCapabilities(network) ?: return false
         return when {
             activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
