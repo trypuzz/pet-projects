@@ -30,9 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    aaptOptions {
+        noCompress 'filamat', 'ktx'
+    }
 }
 
 dependencies {
+    implementation "androidx.fragment:fragment:1.4.1"
+    implementation 'jp.wasabeef:takt:2.1.1'
+    implementation "com.gorisse.thomas.sceneform:sceneform:1.20.5"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

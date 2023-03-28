@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">AR-faces</string>
+    <string name="app_name">Augmented Faces Sample</string>
+    <string-array name="variants">
+        <item>black</item>
+        <item>white</item>
+        <item>yellow</item>
+    </string-array>
 </resources>
