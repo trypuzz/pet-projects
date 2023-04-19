@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="data">DD.MM.YY</string>
+    <string name="logo">Конвертер</string>
+    <string name="logo1">По курсу НацБанка</string>
+    <string name="todo">TODO</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
+    <string name="byn">BYN</string>
+    <string name="rub">RUB</string>
+    <string name="uah">UAH</string>
+    <string name="pln">PLN</string>
+    <string name="kzt">KZT</string>
+    <string name="jpy">JPY</string>
+    <string name="dev">Developed by Alexander Marjin©</string>
+    <string name="pow">Powered by Kotlin®</string>
+    <string name="load">Loading,please wait…</string>
+</resources>

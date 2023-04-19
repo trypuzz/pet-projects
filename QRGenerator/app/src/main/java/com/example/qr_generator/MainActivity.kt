@@ -27,9 +27,8 @@ class MainActivity : AppCompatActivity() {
         bScanQR = findViewById(R.id.bScan)
         editText = findViewById(R.id.editText)
         bGenerate?.isEnabled = false
-        //https://github.com/trypuzz
         bGenerate?.setOnClickListener {
-            generateQRCode("https://github.com/trypuzz")//editText?.text.toString())
+            generateQRCode(editText?.text.toString())//https://github.com/trypuzz
         }
         bScanQR?.setOnClickListener {
             startActivity(Intent(this, ScanQR::class.java))
