@@ -45,10 +45,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.setHasFixedSize(true)
-/*
-Когда данные изменяются, когда владелец не активен, они не будут получать никаких обновлений.
-Если он снова станет активным, он автоматически получит последние доступные данные.
- */
+
         viewModel.rssChannel.observe(this) { channel ->
             if (channel != null) {
                 if (channel.title != null) {

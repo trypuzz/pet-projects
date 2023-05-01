@@ -4,7 +4,6 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -37,12 +36,18 @@ class ScanQR : AppCompatActivity(), ZBarScannerView.ResultHandler {
                 var clip = ClipData.newPlainText("label", it.text)
                 clipboard.setPrimaryClip(clip)
                 val isContain = containsURL(it.text)
+
                 if (isContain){
-                    val openPage = Intent(Intent.ACTION_VIEW, Uri.parse(it.text))
-                    startActivity(openPage)
+                    val intent = Intent(this, WebView::class.java).apply {
+                        putExtra("LINK", it.text)
+                    }
+                    startActivity(intent);
+                } else{
+                    finish()
                 }
+
             }
-            finish()
+            //finish()
         }
         codeScanner.errorCallback = ErrorCallback {
             runOnUiThread {
