@@ -5,7 +5,7 @@
     <data>
         <variable
             name="pokemon"
-            type="com.example.pokeapi_list.network.Pokemon" />
+            type="com.example.pokeapi_list.repositories.PokemonListItem" />
         <variable
             name="clickListener"
             type="com.example.pokeapi_list.ui.PokemonListener" />

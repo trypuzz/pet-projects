@@ -4,15 +4,15 @@ import android.view.View
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.databinding.BindingAdapter
+import com.example.pokeapi_list.dataclasses.Pokemon
 
-import com.example.pokeapi_list.network.Pokemon
 import com.example.pokeapi_list.ui.PokemonApiStatus
 import com.example.pokeapi_list.ui.PokemonListAdapter
 
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<Pokemon>?) {
-    val adapter = recyclerView.adapter as PokemonListAdapter
-    adapter.submitList(data)
+    //val adapter = recyclerView.adapter as PokemonListAdapter
+    //adapter.submitList(data)
 }
 
 @BindingAdapter("apiStatus")

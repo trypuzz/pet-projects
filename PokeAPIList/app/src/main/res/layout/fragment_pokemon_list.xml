@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.pokeapi_list.ui.PokemonViewModel" />
+            type="com.example.pokeapi_list.ui.list.ListViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,14 +23,12 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:listData="@{viewModel.pokemons}"
             tools:listitem="@layout/list_view_item" />
 
         <ImageView
             android:id="@+id/status_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:apiStatus="@{viewModel.status}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

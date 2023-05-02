@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/pokemonListFragment"
-        android:name="com.example.pokeapi_list.ui.PokemonListFragment"
+        android:name="com.example.pokeapi_list.ui.list.PokemonListFragment"
         android:label="PokemonListFragment" >
         <action
             android:id="@+id/action_pokemonListFragment_to_pokemonDetailFragment"
@@ -15,7 +15,11 @@
     </fragment>
     <fragment
         android:id="@+id/pokemonDetailFragment"
-        android:name="com.example.pokemonapp.ui.PokemonDetailFragment"
+        android:name="com.example.pokeapi_list.ui.detail.PokemonDetailFragment"
         android:label="fragment_pokemon_detail"
-        tools:layout="@layout/fragment_pokemon_detail" />
+        tools:layout="@layout/fragment_pokemon_detail">
+        <argument
+            android:name="pokemonName"
+            app:argType="string"/>
+    </fragment>
 </navigation>

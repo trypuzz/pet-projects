@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
 }
 apply plugin: 'kotlin-kapt'
 android {
@@ -30,12 +32,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
 }
 
@@ -45,7 +47,8 @@ dependencies {
     implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
-
+    implementation "androidx.paging:paging-runtime-ktx:3.2.0-alpha04"
+    implementation("androidx.paging:paging-runtime:3.1.1")
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
