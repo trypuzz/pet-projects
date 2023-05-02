@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/pokemonListFragment"
         android:name="com.example.pokeapi_list.ui.list.PokemonListFragment"
-        android:label="PokemonListFragment" >
+        android:label="PokemonListFragment">
         <action
             android:id="@+id/action_pokemonListFragment_to_pokemonDetailFragment"
             app:destination="@id/pokemonDetailFragment" />
@@ -20,6 +20,6 @@
         tools:layout="@layout/fragment_pokemon_detail">
         <argument
             android:name="pokemonName"
-            app:argType="string"/>
+            app:argType="string" />
     </fragment>
 </navigation>

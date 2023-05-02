@@ -10,34 +10,40 @@ import com.example.pokeapi_list.repositories.PokemonApi
 import com.example.pokeapi_list.repositories.PokemonRepository
 import com.example.pokeapi_list.repositories.SinglePokemon
 import com.example.pokeapi_list.repositories.*
+import com.bumptech.glide.Glide
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-enum class PokemonApiStatus {LOADING, ERROR, DONE}
+enum class PokemonApiStatus { LOADING, ERROR, DONE }
 
 class DetailViewModel : ViewModel() {
 
-    private val repository : PokemonRepository =
+    private val repository: PokemonRepository =
         PokemonRepository(
             Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(
                 MoshiConverterFactory.create(
-                    Moshi.Builder().add(KotlinJsonAdapterFactory()).build())).build().create(
-                PokemonApi::class.java))
+                    Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+                )
+            ).build().create(
+                PokemonApi::class.java
+            )
+        )
+
 
     private val _status = MutableLiveData<PokemonApiStatus>()
     val status: LiveData<PokemonApiStatus> = _status
 
     private val _pokemon = MutableLiveData<SinglePokemon>()
-    val pokemon : LiveData<SinglePokemon> = _pokemon
+    val pokemon: LiveData<SinglePokemon> = _pokemon
 
-    fun onPokemonOpened(pokemonName : String) {
+    fun onPokemonOpened(pokemonName: String): SinglePokemon? {
         viewModelScope.launch {
-            val singlePokemon = repository.getSinglePokemon(pokemonName)
-            _pokemon.value = singlePokemon
+            _pokemon.value = repository.getSinglePokemon(pokemonName)
         }
+        return _pokemon.value
     }
 
 }

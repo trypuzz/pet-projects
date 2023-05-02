@@ -14,18 +14,23 @@ import retrofit2.Retrofit
 import kotlinx.coroutines.flow.Flow
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-enum class PokemonApiStatus {LOADING, ERROR, DONE}
+enum class PokemonApiStatus { LOADING, ERROR, DONE }
 
 class ListViewModel : ViewModel() {
 
-    private val repository : PokemonRepository =
-        PokemonRepository(Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(MoshiConverterFactory.create(
-            Moshi.Builder().add(KotlinJsonAdapterFactory()).build())).build().create(PokemonApi::class.java))
+    private val repository: PokemonRepository =
+        PokemonRepository(
+            Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(
+                MoshiConverterFactory.create(
+                    Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+                )
+            ).build().create(PokemonApi::class.java)
+        )
 
     private val _status = MutableLiveData<PokemonApiStatus>()
     val status: LiveData<PokemonApiStatus> = _status
 
-    lateinit var pokemons : Flow<PagingData<PokemonListItem>>
+    lateinit var pokemons: Flow<PagingData<PokemonListItem>>
 
     init {
         getPokemonList()

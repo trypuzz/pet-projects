@@ -5,9 +5,9 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class SinglePokemonResponse(
-    val name : String,
-    val types : String,
-    val weight : Int,
-    val height : Int,
-    val sprite : String
+    val name: String,
+    val types: String,
+    val weight: Int,
+    val height: Int,
+    val sprite: String
 ) : Parcelable

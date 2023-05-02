@@ -17,7 +17,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Pokemon>?) {
 
 @BindingAdapter("apiStatus")
 fun bindStatus(statusImageView: ImageView, status: PokemonApiStatus?) {
-    when(status) {
+    when (status) {
         PokemonApiStatus.LOADING -> {
             statusImageView.visibility = View.VISIBLE
             statusImageView.setImageResource(R.drawable.loading_animation)

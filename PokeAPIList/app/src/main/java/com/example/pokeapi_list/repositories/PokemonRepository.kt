@@ -9,22 +9,22 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 const val BASE_URL = "https://pokeapi.co/api/v2/"
-const val LIMIT = 20
+const val LIMIT = 50
 
 
-class PokemonRepository(private val pokemonApi : PokemonApi) {
+class PokemonRepository(private val pokemonApi: PokemonApi) {
     fun getPokemonList() = Pager(
-        pagingSourceFactory = {PokemonPagingSource(pokemonApi)},
+        pagingSourceFactory = { PokemonPagingSource(pokemonApi) },
         config = PagingConfig(pageSize = LIMIT)
     ).flow
 
-    suspend fun getSinglePokemon(pokemonName : String) : SinglePokemon {
+    suspend fun getSinglePokemon(pokemonName: String): SinglePokemon {
         return pokemonApi.getSinglePokemon(pokemonName)
     }
 }
 
 
-class PokemonPagingSource(private val api : PokemonApi) : PagingSource<Int, PokemonListItem>() {
+class PokemonPagingSource(private val api: PokemonApi) : PagingSource<Int, PokemonListItem>() {
     override fun getRefreshKey(state: PagingState<Int, PokemonListItem>): Int? {
         return state.anchorPosition
     }
@@ -48,48 +48,47 @@ class PokemonPagingSource(private val api : PokemonApi) : PagingSource<Int, Poke
 }
 
 
-
 interface PokemonApi {
     @GET("pokemon/")
     suspend fun getPokemonList(
-        @Query("offset") offset : Int,
-        @Query("limit") limit : Int
-    ) : PokemonListResult
+        @Query("offset") offset: Int,
+        @Query("limit") limit: Int
+    ): PokemonListResult
 
     @GET("pokemon/{pokemonName}/")
     suspend fun getSinglePokemon(
-        @Path("pokemonName") pokemonName : String
-    ) : SinglePokemon
+        @Path("pokemonName") pokemonName: String
+    ): SinglePokemon
 }
 
 data class PokemonListResult(
-    @field:Json(name = "count") val count : Int,
-    @field:Json(name = "next") val next : String?,
-    @field:Json(name = "previous") val previous : String?,
-    @field:Json(name = "result") val results : List<PokemonListItem>
+    @field:Json(name = "count") val count: Int,
+    @field:Json(name = "next") val next: String?,
+    @field:Json(name = "previous") val previous: String?,
+    @field:Json(name = "result") val results: List<PokemonListItem>
 )
 
 data class PokemonListItem(
-    @field:Json(name = "name") val name : String,
-    @field:Json(name = "url") val url : String
+    @field:Json(name = "name") val name: String,
+    @field:Json(name = "url") val url: String
 )
 
 data class SinglePokemon(
-    @field:Json(name = "name") val name : String?,
-    @field:Json(name = "types") val types : List<PokemonType>?,
-    @field:Json(name = "weight") val weight : Int?,
-    @field:Json(name = "height") val height : Int?,
-    @field:Json(name = "sprites") val sprites : Sprites?
+    @field:Json(name = "name") val name: String?,
+    @field:Json(name = "types") val types: List<PokemonType>?,
+    @field:Json(name = "weight") val weight: Int?,
+    @field:Json(name = "height") val height: Int?,
+    @field:Json(name = "sprites") val sprites: Sprites?
 )
 
 data class PokemonType(
-    @field:Json(name = "type") val type : Type?
+    @field:Json(name = "type") val type: Type?
 )
 
 data class Type(
-    @field:Json(name = "name") val name : String?
+    @field:Json(name = "name") val name: String?
 )
 
 data class Sprites(
-    @field:Json(name = "front_default") val front_default : String?
+    @field:Json(name = "front_default") val front_default: String?
 )
