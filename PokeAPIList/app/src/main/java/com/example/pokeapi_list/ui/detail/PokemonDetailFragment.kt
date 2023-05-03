@@ -35,22 +35,24 @@ class PokemonDetailFragment : Fragment() {
             binding.root.findNavController().navigateUp()
         }
 
-        var currentPokemon = viewModel.onPokemonOpened(args.pokemonName)
+        viewModel.onPokemonOpened(args.pokemonName)
 
-        binding.apply {
-            Glide.with(root)
-                .load(currentPokemon?.sprites?.front_default)
-                .into(binding.image)
-        }
+        viewModel.pokemon.observe( this.viewLifecycleOwner, Observer { pokemon ->
+            binding.apply {
+                Glide.with(root)
+                    .load(pokemon.sprites?.front_default)
+                    .into(binding.image)
+            }
 
-        binding.name.text = currentPokemon?.name?.capitalize()
-        binding.height.text = "Height: ${currentPokemon?.height?.div(0.1)?.toInt().toString()} cm"
-        binding.weight.text = "Weight: ${currentPokemon?.weight.toString()} kg"
-        binding.types.text = currentPokemon?.types?.joinToString(
-            prefix = "Type: ",
-            separator = ", ",
-            transform = { it.type?.name.toString() }
-        )
+            binding.name.text = pokemon.name?.capitalize()
+            binding.height.text = "Height: ${pokemon.height?.div(0.1)?.toInt().toString()} cm"
+            binding.weight.text = "Weight: ${pokemon.weight.toString()} kg"
+            binding.types.text = pokemon.types?.joinToString(
+                prefix = "Type: ",
+                separator = ", ",
+                transform = { it.type?.name.toString() }
+            )
+        })
 
         return binding.root
     }

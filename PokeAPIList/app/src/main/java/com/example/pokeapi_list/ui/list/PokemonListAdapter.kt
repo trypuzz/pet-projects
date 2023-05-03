@@ -11,6 +11,7 @@ import com.example.pokeapi_list.databinding.ListViewItemBinding
 import com.example.pokeapi_list.dataclasses.Pokemon
 import com.example.pokeapi_list.dataclasses.PokemonResponse
 import com.example.pokeapi_list.repositories.PokemonListItem
+import com.example.pokeapi_list.ui.list.PokemonListener
 
 class PokemonListAdapter(private val clickListener: PokemonListener) :
     PagingDataAdapter<PokemonListItem, PokemonListAdapter.PokemonViewHolder>(DiffCallback) {

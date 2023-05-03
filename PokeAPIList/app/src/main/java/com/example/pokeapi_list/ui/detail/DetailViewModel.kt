@@ -39,11 +39,10 @@ class DetailViewModel : ViewModel() {
     private val _pokemon = MutableLiveData<SinglePokemon>()
     val pokemon: LiveData<SinglePokemon> = _pokemon
 
-    fun onPokemonOpened(pokemonName: String): SinglePokemon? {
+    fun onPokemonOpened(pokemonName: String) {
         viewModelScope.launch {
             _pokemon.value = repository.getSinglePokemon(pokemonName)
         }
-        return _pokemon.value
     }
 
 }

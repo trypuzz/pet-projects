@@ -9,11 +9,11 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.pokeapi_list.ui.PokemonListAdapter
-import com.example.pokeapi_list.ui.PokemonListener
+import com.example.pokeapi_list.ui.list.PokemonListener
 import com.example.pokeapi_list.R
 import com.example.pokeapi_list.databinding.FragmentPokemonListBinding
 import com.example.pokeapi_list.ui.list.PokemonListAdapter
-import com.example.pokeapi_list.ui.PokemonListener
+import com.example.pokeapi_list.repositories.PokemonListItem
 import kotlinx.coroutines.launch
 
 class PokemonListFragment : Fragment() {

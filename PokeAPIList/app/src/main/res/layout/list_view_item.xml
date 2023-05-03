@@ -11,7 +11,7 @@
 
         <variable
             name="clickListener"
-            type="com.example.pokeapi_list.ui.PokemonListener" />
+            type="com.example.pokeapi_list.ui.list.PokemonListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
