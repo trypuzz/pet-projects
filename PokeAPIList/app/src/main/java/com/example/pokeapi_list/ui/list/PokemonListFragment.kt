@@ -8,14 +8,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.example.pokeapi_list.ui.PokemonListAdapter
-import com.example.pokeapi_list.ui.list.PokemonListener
-import com.example.pokeapi_list.R
-import com.example.pokeapi_list.databinding.FragmentPokemonListBinding
-import com.example.pokeapi_list.ui.list.PokemonListAdapter
-import com.example.pokeapi_list.repositories.PokemonListItem
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import com.example.pokeapi_list.databinding.FragmentPokemonListBinding
+import com.example.pokeapi_list.ui.PokemonListAdapter
 
+@AndroidEntryPoint
 class PokemonListFragment : Fragment() {
 
     private val viewModel: ListViewModel by activityViewModels()
@@ -23,7 +21,7 @@ class PokemonListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentPokemonListBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
@@ -33,15 +31,12 @@ class PokemonListFragment : Fragment() {
             findNavController().navigate(direction)
         })
 
-        lifecycleScope.launch {
-            val adapter = binding.recyclerView.adapter as PokemonListAdapter
-            viewModel.pokemons.collect {
+        val adapter = binding.recyclerView.adapter as PokemonListAdapter
+        viewModel.pokemons.observe(viewLifecycleOwner) {
+            lifecycleScope.launch {
                 adapter.submitData(it)
             }
-
-
         }
         return binding.root
     }
-
 }
