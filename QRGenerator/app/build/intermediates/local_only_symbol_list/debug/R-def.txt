@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_logo_custom_background
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bScan
+id button
+id editText
+id imageView
+id scanner_view
+id webView
+layout activity_main
+layout activity_scan_qr
+layout activity_web_view
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap ic_logo
+mipmap ic_logo_custom
+mipmap ic_logo_custom_round
+string app_name
+style Theme.QRGenerator
+xml backup_rules
+xml data_extraction_rules

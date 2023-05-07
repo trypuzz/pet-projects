@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#061257</color>
+    <color name="black">#FF000000</color>
+    <color name="currency">#FF11124C</color>
+    <color name="data">#FFEB3B</color>
+    <color name="ic_launcher_background">#020332</color>
+    <color name="line">#9A0F0F</color>
+    <color name="line_main">#045083</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#000</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Converter</string>
+    <string name="byn">BYN</string>
+    <string name="data">DD.MM.YY</string>
+    <string name="dev">Developed by Alexander Marjin©</string>
+    <string name="eur">EUR</string>
+    <string name="jpy">JPY</string>
+    <string name="kzt">KZT</string>
+    <string name="load">Loading,please wait…</string>
+    <string name="logo">Конвертер</string>
+    <string name="logo1">По курсу НацБанка</string>
+    <string name="pln">PLN</string>
+    <string name="pow">Powered by Kotlin®</string>
+    <string name="rub">RUB</string>
+    <string name="todo">TODO</string>
+    <string name="uah">UAH</string>
+    <string name="usd">USD</string>
+    <style name="Theme.Converter" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/background</item>
+        
+    </style>
+    <style name="progressBar" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/line_main</item>
+    </style>
+</resources>

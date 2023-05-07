@@ -1,0 +1,13 @@
+#Thu Mar 30 02:47:17 MSK 2023
+path.3=7/classes.dex
+path.2=14/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.3=E\:\\GitHub\\1simple-pet-projects\\AR-faces\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\7\\classes.dex
+base.2=E\:\\GitHub\\1simple-pet-projects\\AR-faces\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\14\\classes.dex
+base.1=E\:\\GitHub\\1simple-pet-projects\\AR-faces\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.0=E\:\\GitHub\\1simple-pet-projects\\AR-faces\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex

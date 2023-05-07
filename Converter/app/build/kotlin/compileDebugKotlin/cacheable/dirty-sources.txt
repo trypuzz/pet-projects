@@ -1,0 +1,2 @@
+E:\GitHub\1simple-pet-projects\Converter\app\src\main\java\com\example\converter\splash.kt
+E:\GitHub\1simple-pet-projects\Converter\app\src\main\java\com\example\converter\MainActivity.kt

@@ -1,0 +1,3 @@
+com.example.qr_generator.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

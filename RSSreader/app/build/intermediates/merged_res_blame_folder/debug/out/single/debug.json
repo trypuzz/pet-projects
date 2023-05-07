@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xxhdpi_ic_icon_round.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xxhdpi/ic_icon_round.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xhdpi_ic_icon_round.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xhdpi/ic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\layout_content_main.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xxxhdpi_ic_icon.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xxxhdpi/ic_icon.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-hdpi_ic_icon_round.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-hdpi/ic_icon_round.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-mdpi_ic_icon.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-mdpi/ic_icon.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-hdpi_ic_icon_foreground.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-hdpi/ic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-anydpi-v26_ic_icon_round.xml.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-anydpi-v26/ic_icon_round.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-hdpi_ic_icon.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-hdpi/ic_icon.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-mdpi_ic_icon_foreground.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-mdpi/ic_icon_foreground.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-anydpi-v26_ic_icon.xml.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-anydpi-v26/ic_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xxhdpi_ic_icon.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xxhdpi/ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/layout_content_main.xml.flat",
+        "source": "com.example.rss_reader.app-main-54:/layout/content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xxxhdpi_ic_icon_foreground.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xxxhdpi/ic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xxhdpi_ic_icon_foreground.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xxhdpi/ic_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\layout_row.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\layout\\row.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\drawable_placeholder.png.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\drawable\\placeholder.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/layout_row.xml.flat",
+        "source": "com.example.rss_reader.app-main-54:/layout/row.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-mdpi_ic_icon_round.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-mdpi/ic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-anydpi-v33_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-anydpi-v33\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/layout_activity_main.xml.flat",
+        "source": "com.example.rss_reader.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xxxhdpi_ic_icon_round.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xxxhdpi/ic_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xhdpi_ic_icon_foreground.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xhdpi/ic_icon_foreground.png"
+    },
+    {
+        "merged": "com.example.rss_reader.app-merged_res-52:/mipmap-xhdpi_ic_icon.png.flat",
+        "source": "com.example.rss_reader.app-main-54:/mipmap-xhdpi/ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-merged_res-52:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.rss_reader.app-main-54:\\mipmap-hdpi\\ic_launcher.webp"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.qr_generator.app-mergeDebugResources-37:/layout/activity_web_view.xml",
+        "source": "com.example.qr_generator.app-main-40:/layout/activity_web_view.xml"
+    },
+    {
+        "merged": "com.example.qr_generator.app-mergeDebugResources-37:/layout/activity_scan_qr.xml",
+        "source": "com.example.qr_generator.app-main-40:/layout/activity_scan_qr.xml"
+    },
+    {
+        "merged": "com.example.qr_generator.app-mergeDebugResources-37:/layout/activity_main.xml",
+        "source": "com.example.qr_generator.app-main-40:/layout/activity_main.xml"
+    }
+]

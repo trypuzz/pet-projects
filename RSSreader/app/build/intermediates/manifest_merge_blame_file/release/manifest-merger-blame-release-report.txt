@@ -1,0 +1,156 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.rss_reader"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:4:5-79
+11-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:5:5-67
+12-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:5:22-64
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.rss_reader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.rss_reader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:7:5-26:19
+21        android:allowBackup="true"
+21-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:9:9-65
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:10:9-54
+26        android:icon="@mipmap/ic_launcher"
+26-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:11:9-43
+27        android:label="@string/app_name"
+27-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:12:9-41
+28        android:supportsRtl="true"
+28-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:13:9-35
+29        android:theme="@style/Theme.RSSreader" >
+29-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:14:9-47
+30        <activity
+30-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:16:9-25:20
+31            android:name="com.example.rss_reader.MainActivity"
+31-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:17:13-41
+32            android:exported="true"
+32-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:18:13-36
+33            android:theme="@style/AppTheme.NoActionBar" >
+33-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:19:13-56
+34            <intent-filter>
+34-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:20:13-24:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:21:17-69
+35-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:21:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:23:17-77
+37-->E:\GitHub\simple-pet-projects\RSSreader\app\src\main\AndroidManifest.xml:23:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <provider
+41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+42            android:name="androidx.startup.InitializationProvider"
+42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+43            android:authorities="com.example.rss_reader.androidx-startup"
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+44            android:exported="false" >
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+45            <meta-data
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+47                android:value="androidx.startup" />
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+48            <meta-data
+48-->[androidx.lifecycle:lifecycle-process:2.6.0] C:\Users\MSI\.gradle\caches\transforms-3\57c03be9b69a8754d8f84fe07f6b9e53\transformed\lifecycle-process-2.6.0\AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+49-->[androidx.lifecycle:lifecycle-process:2.6.0] C:\Users\MSI\.gradle\caches\transforms-3\57c03be9b69a8754d8f84fe07f6b9e53\transformed\lifecycle-process-2.6.0\AndroidManifest.xml:30:17-78
+50                android:value="androidx.startup" />
+50-->[androidx.lifecycle:lifecycle-process:2.6.0] C:\Users\MSI\.gradle\caches\transforms-3\57c03be9b69a8754d8f84fe07f6b9e53\transformed\lifecycle-process-2.6.0\AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:30:13-32:52
+52                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+52-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:31:17-85
+53                android:value="androidx.startup" />
+53-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:32:17-49
+54        </provider>
+55
+56        <uses-library
+56-->[androidx.window:window:1.0.0] C:\Users\MSI\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+57            android:name="androidx.window.extensions"
+57-->[androidx.window:window:1.0.0] C:\Users\MSI\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+58            android:required="false" />
+58-->[androidx.window:window:1.0.0] C:\Users\MSI\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+59        <uses-library
+59-->[androidx.window:window:1.0.0] C:\Users\MSI\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+60            android:name="androidx.window.sidecar"
+60-->[androidx.window:window:1.0.0] C:\Users\MSI\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0] C:\Users\MSI\.gradle\caches\transforms-3\2583efbc42003ff80e01466bf2f32ea1\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+62
+63        <provider
+63-->[com.squareup.picasso:picasso:2.8] C:\Users\MSI\.gradle\caches\transforms-3\f9d669786fddc2ec1ab6bb5cbe427cd8\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+64            android:name="com.squareup.picasso.PicassoProvider"
+64-->[com.squareup.picasso:picasso:2.8] C:\Users\MSI\.gradle\caches\transforms-3\f9d669786fddc2ec1ab6bb5cbe427cd8\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+65            android:authorities="com.example.rss_reader.com.squareup.picasso"
+65-->[com.squareup.picasso:picasso:2.8] C:\Users\MSI\.gradle\caches\transforms-3\f9d669786fddc2ec1ab6bb5cbe427cd8\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+66            android:exported="false" />
+66-->[com.squareup.picasso:picasso:2.8] C:\Users\MSI\.gradle\caches\transforms-3\f9d669786fddc2ec1ab6bb5cbe427cd8\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+67
+68        <service
+68-->[androidx.room:room-runtime:2.4.3] C:\Users\MSI\.gradle\caches\transforms-3\a70735effeb068a0d9163e25d30d90d6\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+69            android:name="androidx.room.MultiInstanceInvalidationService"
+69-->[androidx.room:room-runtime:2.4.3] C:\Users\MSI\.gradle\caches\transforms-3\a70735effeb068a0d9163e25d30d90d6\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+70            android:directBootAware="true"
+70-->[androidx.room:room-runtime:2.4.3] C:\Users\MSI\.gradle\caches\transforms-3\a70735effeb068a0d9163e25d30d90d6\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+71            android:exported="false" />
+71-->[androidx.room:room-runtime:2.4.3] C:\Users\MSI\.gradle\caches\transforms-3\a70735effeb068a0d9163e25d30d90d6\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+72
+73        <receiver
+73-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:35:9-47:20
+74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+74-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:36:13-76
+75            android:directBootAware="false"
+75-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:37:13-44
+76            android:enabled="true"
+76-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:38:13-35
+77            android:exported="true"
+77-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:39:13-36
+78            android:permission="android.permission.DUMP" >
+78-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:40:13-57
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:41:13-43:29
+80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:42:17-91
+80-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:42:25-88
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:44:13-46:29
+83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:45:17-85
+83-->[androidx.profileinstaller:profileinstaller:1.2.1] C:\Users\MSI\.gradle\caches\transforms-3\7248ff3d608ffa38fc21b8731e18b16f\transformed\profileinstaller-1.2.1\AndroidManifest.xml:45:25-82
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>

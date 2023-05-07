@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.zxing:core:3.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.5.0/43cad2dc52f93c72e21ba4bd0a9244f04bb51fad/core-3.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.5.0/926d6c258693e5a09ad487359c5b5debb128c234/core-3.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.5.0/abb39ed1f253c7615d40826464ce66dac6e96bb5/core-3.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.androidmads:QRGenerator:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/25d3a232eeb4562af825a4bfeda50455/transformed/jetified-QRGenerator-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/25d3a232eeb4562af825a4bfeda50455/transformed/jetified-QRGenerator-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/25d3a232eeb4562af825a4bfeda50455/transformed/jetified-QRGenerator-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.androidmads/QRGenerator/1.0.1/b00f0e81dbfdf1712497bcc63410de6a6392d94c/QRGenerator-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

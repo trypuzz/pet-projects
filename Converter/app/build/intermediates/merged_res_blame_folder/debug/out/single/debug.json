@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_ua.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/ua.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_kz.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/kz.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_by.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/by.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.converter.app-main-31:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_ca.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/ca.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_jp.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/jp.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_pl.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/pl.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_ru.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/ru.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_fon.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/fon.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_conv.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/conv.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_q.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/q.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_european_union.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/european_union.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_us.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/us.png"
+    },
+    {
+        "merged": "com.example.converter.app-merged_res-29:/drawable-hdpi_cona.png.flat",
+        "source": "com.example.converter.app-main-31:/drawable-hdpi/cona.png"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-merged_res-29:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\7.5\\com.example.converter.app-main-31:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    }
+]

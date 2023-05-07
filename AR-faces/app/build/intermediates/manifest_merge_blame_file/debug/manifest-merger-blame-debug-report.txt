@@ -1,0 +1,146 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ar_faces"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:5:5-65
+11-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:6:5-67
+12-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <uses-feature
+14-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:7:5-9:35
+15        android:glEsVersion="0x00030000"
+15-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:8:9-41
+16        android:required="true" />
+16-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:9:9-32
+17    <uses-feature
+17-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:11:5-13:35
+18        android:name="android.hardware.camera.ar"
+18-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:12:9-50
+19        android:required="true" />
+19-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:13:9-32
+20
+21    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+21-->[jp.wasabeef:takt:2.1.1] C:\Users\MSI\.gradle\caches\transforms-3\d356cc9982da480bb84e6849bf682e04\transformed\takt-2.1.1\AndroidManifest.xml:9:5-78
+21-->[jp.wasabeef:takt:2.1.1] C:\Users\MSI\.gradle\caches\transforms-3\d356cc9982da480bb84e6849bf682e04\transformed\takt-2.1.1\AndroidManifest.xml:9:22-75
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.ar_faces.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.ar_faces.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+28
+29    <queries>
+29-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:29:5-31:15
+30        <package android:name="com.google.ar.core" />
+30-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:30:9-54
+30-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:30:18-51
+31    </queries>
+32
+33    <application
+33-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:15:5-36:19
+34        android:allowBackup="true"
+34-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:16:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.9.0] C:\Users\MSI\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+36        android:dataExtractionRules="@xml/data_extraction_rules"
+36-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:17:9-65
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:fullBackupContent="@xml/backup_rules"
+39-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:18:9-54
+40        android:icon="@mipmap/ic_launcher"
+40-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:19:9-43
+41        android:label="@string/app_name"
+41-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:20:9-41
+42        android:supportsRtl="true"
+42-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:21:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.AugmentedFacesSample" >
+44-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:22:9-58
+45        <meta-data
+45-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:24:9-26:40
+46            android:name="com.google.ar.core"
+46-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:25:13-46
+47            android:value="required" />
+47-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:26:13-37
+48
+49        <activity
+49-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:27:9-35:20
+50            android:name="com.example.ar_faces.MainActivity"
+50-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:28:13-41
+51            android:exported="true"
+51-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:30:13-36
+52            android:screenOrientation="locked" >
+52-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:29:13-47
+53            <intent-filter>
+53-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:31:13-34:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:32:17-69
+54-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:32:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:33:17-77
+56-->E:\GitHub\1simple-pet-projects\AR-faces\app\src\main\AndroidManifest.xml:33:27-74
+57            </intent-filter>
+58        </activity>
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+62            android:authorities="com.example.ar_faces.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MSI\.gradle\caches\transforms-3\ae62b2ed57c08e4ce03649c04da30a3c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MSI\.gradle\caches\transforms-3\2882a1b6f8a4e98c7a1903336c452fc8\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MSI\.gradle\caches\transforms-3\2882a1b6f8a4e98c7a1903336c452fc8\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MSI\.gradle\caches\transforms-3\2882a1b6f8a4e98c7a1903336c452fc8\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+70        </provider> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+71        <meta-data
+71-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:36:9-38:41
+72            android:name="com.google.ar.core.min_apk_version"
+72-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:37:13-62
+73            android:value="212840000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+73-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:38:13-38
+74        <activity
+74-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:40:9-46:80
+75            android:name="com.google.ar.core.InstallActivity"
+75-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:41:13-62
+76            android:configChanges="keyboardHidden|orientation|screenSize"
+76-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:42:13-74
+77            android:excludeFromRecents="true"
+77-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:43:13-46
+78            android:exported="false"
+78-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:44:13-37
+79            android:launchMode="singleTop"
+79-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:45:13-43
+80            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+80-->[com.google.ar:core:1.29.0] C:\Users\MSI\.gradle\caches\transforms-3\1b8a57c0419d1c5097e46dc8f51c33d0\transformed\core-1.29.0\AndroidManifest.xml:46:13-77
+81    </application>
+82
+83</manifest>
