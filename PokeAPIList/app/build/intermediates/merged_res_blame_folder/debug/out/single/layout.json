@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.pokeapi_list.app-mergeDebugResources-50:/layout/fragment_pokemon_detail.xml",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/fragment_pokemon_detail.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-mergeDebugResources-50:/layout/fragment_pokemon_list.xml",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/fragment_pokemon_list.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-mergeDebugResources-50:/layout/list_view_item.xml",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/list_view_item.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-mergeDebugResources-50:/layout/activity_main.xml",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/activity_main.xml"
+    }
+]

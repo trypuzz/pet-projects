@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/xml_backup_rules.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/layout_activity_main.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/layout_fragment_pokemon_detail.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/fragment_pokemon_detail.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/navigation_nav_graph.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/drawable_loading_img.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/drawable/loading_img.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/layout_list_view_item.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/list_view_item.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/drawable_ic_connection_error.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/drawable/ic_connection_error.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/layout_fragment_pokemon_list.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/layout/fragment_pokemon_list.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/drawable_ic_broken_image.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/drawable/ic_broken_image.xml"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pokeapi_list.app-merged_res-51:/drawable_loading_animation.xml.flat",
+        "source": "com.example.pokeapi_list.app-main-53:/drawable/loading_animation.xml"
+    }
+]
