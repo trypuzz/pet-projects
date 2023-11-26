@@ -16,12 +16,11 @@ import com.google.ar.core.AugmentedFace
 import com.google.ar.core.TrackingState
 import com.google.ar.sceneform.ArSceneView
 import com.google.ar.sceneform.Sceneform
-import com.google.ar.sceneform.rendering.ModelRenderable
-import com.google.ar.sceneform.rendering.Renderable
-import com.google.ar.sceneform.rendering.RenderableInstance
-import com.google.ar.sceneform.rendering.Texture
+import com.google.ar.sceneform.rendering.*
 import com.google.ar.sceneform.ux.ArFrontFacingFragment
 import com.google.ar.sceneform.ux.AugmentedFaceNode
+import jp.wasabeef.takt.Seat
+import jp.wasabeef.takt.Takt
 import java.util.HashSet
 import java.util.concurrent.CompletableFuture
 
@@ -38,14 +37,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        /*
+
         Takt.stock(application)
-            .color(Color.RED)
+            .color(100000)
             .seat(Seat.TOP_RIGHT)
             .interval(250)
             .play()
 
-         */
         supportFragmentManager.addFragmentOnAttachListener { fragmentManager: FragmentManager, fragment: Fragment ->
             this.onAttachFragment(
                 fragmentManager,
