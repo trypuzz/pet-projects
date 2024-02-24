@@ -8,18 +8,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.VideoView
 import androidx.activity.ComponentActivity
+import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
 import com.snap.camerakit.support.app.CameraActivity
 
 private const val TAG = "MainActivity"
 private val LENS_GROUP_IDS = arrayOf(BuildConfig.LENS_GROUP_ID_TEST)
-private const val APPLY_LENS_BY_ID = "6ef1f6be-187c-4993-858a-3a70fdd71f49"
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val key = intent.getStringExtra("etNumber")
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
 
         val captureResultLabel = findViewById<TextView>(R.id.label_capture_result)
@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             videoView.visibility = View.GONE
             imageView.visibility = View.GONE
         }
+
 
         val captureLauncher = (this as ComponentActivity).registerForActivityResult(CameraActivity.Capture) { result ->
             Log.d(TAG, "Got capture result: $result")
@@ -66,26 +67,26 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val key = intent.getStringExtra("etNumber")
-
+        getCam(captureLauncher, key)
         findViewById<Button>(R.id.button_capture_lens).setOnClickListener {
-            captureLauncher.launch(
-                CameraActivity.Configuration.WithLens(
-                    lensGroupId = LENS_GROUP_IDS.first(),
-                    lensId = (when (key) {
-                        "1"-> "96146402-39c3-4080-834b-343458977cb9"
-                        "2" -> "6ef1f6be-187c-4993-858a-3a70fdd71f49"
-                        "3" -> "0751b9cb-c0cd-42a4-8aac-7ae3b946ea3d"
-                        else -> "96146402-39c3-4080-834b-343458977cb9" //dress
-                        //"6ef1f6be-187c-4993-858a-3a70fdd71f49" //bomber
-                        //"0751b9cb-c0cd-42a4-8aac-7ae3b946ea3d" //coat
-
-                    })
-
-                    //APPLY_LENS_BY_ID
-
-                )
-            )
+            getCam(captureLauncher, key)
         }
+    }
+
+    private fun getCam(captureLauncher: ActivityResultLauncher<CameraActivity.Configuration>, key:String?){
+        captureLauncher.launch(
+            CameraActivity.Configuration.WithLens(
+                lensGroupId = LENS_GROUP_IDS.first(),
+                lensId = (when (key) {
+                    "1" -> "96146402-39c3-4080-834b-343458977cb9"
+                    "2" -> "6ef1f6be-187c-4993-858a-3a70fdd71f49"
+                    "3" -> "0751b9cb-c0cd-42a4-8aac-7ae3b946ea3d"
+                    else -> "96146402-39c3-4080-834b-343458977cb9" //dress
+                    //"6ef1f6be-187c-4993-858a-3a70fdd71f49" //bomber
+                    //"0751b9cb-c0cd-42a4-8aac-7ae3b946ea3d" //coat
+                })
+                //APPLY_LENS_BY_ID
+            )
+        )
     }
 }
