@@ -23,7 +23,7 @@ private const val TAG = "MainActivity"
 private val LENS_GROUP_IDS = arrayOf(BuildConfig.LENS_GROUP_ID_TEST)
 private var PATHtoDOWNLOAD =
     Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM)
-        .toString() + File.separator + "Diploma_ARRoom" + File.separator
+        .toString() + File.separator + R.string.folder_name + File.separator
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         val key = intent.getStringExtra("etNumber")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         val downloadButton = findViewById<Button>(R.id.button_capture_download)
         val captureResultLabel = findViewById<TextView>(R.id.label_capture_result)
@@ -63,7 +62,6 @@ class MainActivity : AppCompatActivity() {
                             PATHtoDOWNLOAD + "video$key(${countOfFilesExistsInDirectory("video$key")}).mp4"
                         )
                     }
-
                 }
 
                 is CameraActivity.Capture.Result.Success.Image -> {
@@ -75,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                         createDirectoryIfNotExists()
                         downloadImage(
                             result.uri.toString(),
-                            PATHtoDOWNLOAD + "video$key(${countOfFilesExistsInDirectory("video$key")}).jpg"
+                            PATHtoDOWNLOAD + "image$key(${countOfFilesExistsInDirectory("image$key")}).jpg"
                         )
                     }
                 }
@@ -154,7 +152,6 @@ class MainActivity : AppCompatActivity() {
                     count++
                 }
             }
-
         }
         return count
     }

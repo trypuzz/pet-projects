@@ -20,5 +20,6 @@
     <string name="label_result_failure">CameraActivity failed due to:\n%s</string>
     <string name="description_captured_video_preview">Captured video preview</string>
     <string name="description_captured_image_preview">Captured image preview</string>
+    <string name="folder_name">Diploma_ARRoom</string>
 
 </resources>
