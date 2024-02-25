@@ -1,3 +1,0 @@
-[*.{kt,kts,java}]
-max_line_length = 120
-indent_style = space
