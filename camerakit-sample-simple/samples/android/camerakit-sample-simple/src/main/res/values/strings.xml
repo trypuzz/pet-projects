@@ -12,6 +12,7 @@
     <string name="label_multiple_lenses_idle_state">Multiple lenses with idle state</string>
     <string name="label_multiple_lenses_camera_facing_back">Multiple lenses &amp; back camera</string>
     <string name="label_lens">Single lens</string>
+    <string name="label_download_lens">Download</string>
     <string name="label_lens_wo_control_strip">Single lens w/o control strip</string>
     <string name="label_lens_no_icon">Single lens with no icon</string>
     <string name="label_result_none">No result</string>

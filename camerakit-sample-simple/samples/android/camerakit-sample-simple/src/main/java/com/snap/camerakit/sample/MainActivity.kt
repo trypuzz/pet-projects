@@ -1,6 +1,7 @@
 package com.snap.camerakit.sample
 
 import android.os.Bundle
+import android.os.Environment
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -11,9 +12,18 @@ import androidx.activity.ComponentActivity
 import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
 import com.snap.camerakit.support.app.CameraActivity
+import java.io.BufferedInputStream
+import java.io.File
+import java.io.FileOutputStream
+
+import java.net.URL
+
 
 private const val TAG = "MainActivity"
 private val LENS_GROUP_IDS = arrayOf(BuildConfig.LENS_GROUP_ID_TEST)
+private var PATHtoDOWNLOAD =
+    Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM)
+        .toString() + File.separator + "Diploma_ARRoom" + File.separator
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        val downloadButton = findViewById<Button>(R.id.button_capture_download)
         val captureResultLabel = findViewById<TextView>(R.id.label_capture_result)
         val imageView = findViewById<ImageView>(R.id.image_preview)
         val videoView = findViewById<VideoView>(R.id.video_preview).apply {
@@ -44,6 +56,14 @@ class MainActivity : AppCompatActivity() {
                     videoView.start()
                     imageView.visibility = View.GONE
                     captureResultLabel.text = null
+                    downloadButton.setOnClickListener {
+                        createDirectoryIfNotExists()
+                        downloadImage(
+                            result.uri.toString(),
+                            PATHtoDOWNLOAD + "video$key(${countOfFilesExistsInDirectory("video$key")}).mp4"
+                        )
+                    }
+
                 }
 
                 is CameraActivity.Capture.Result.Success.Image -> {
@@ -51,11 +71,19 @@ class MainActivity : AppCompatActivity() {
                     imageView.setImageURI(result.uri)
                     videoView.visibility = View.GONE
                     captureResultLabel.text = null
+                    downloadButton.setOnClickListener {
+                        createDirectoryIfNotExists()
+                        downloadImage(
+                            result.uri.toString(),
+                            PATHtoDOWNLOAD + "video$key(${countOfFilesExistsInDirectory("video$key")}).jpg"
+                        )
+                    }
                 }
 
                 is CameraActivity.Capture.Result.Cancelled -> {
                     captureResultLabel.text = getString(R.string.label_result_none)
                     clearMediaPreviews()
+                    downloadButton.visibility = View.GONE
                 }
 
                 is CameraActivity.Capture.Result.Failure -> {
@@ -63,17 +91,18 @@ class MainActivity : AppCompatActivity() {
                         R.string.label_result_failure, result.exception.toString()
                     )
                     clearMediaPreviews()
+                    downloadButton.visibility = View.GONE
                 }
             }
         }
 
-        getCam(captureLauncher, key)
+        openCameraView(captureLauncher, key)
         findViewById<Button>(R.id.button_capture_lens).setOnClickListener {
-            getCam(captureLauncher, key)
+            openCameraView(captureLauncher, key)
         }
     }
 
-    private fun getCam(captureLauncher: ActivityResultLauncher<CameraActivity.Configuration>, key:String?){
+    private fun openCameraView(captureLauncher: ActivityResultLauncher<CameraActivity.Configuration>, key: String?) {
         captureLauncher.launch(
             CameraActivity.Configuration.WithLens(
                 lensGroupId = LENS_GROUP_IDS.first(),
@@ -88,5 +117,52 @@ class MainActivity : AppCompatActivity() {
                 //APPLY_LENS_BY_ID
             )
         )
+    }
+
+    private fun downloadImage(uri: String, destinationPath: String) {
+        try {
+            val url = URL(uri)
+            val connection = url.openConnection()
+            connection.connect()
+
+            val inputStream = BufferedInputStream(url.openStream())
+            val outputStream = FileOutputStream(destinationPath)
+
+            val data = ByteArray(1024)
+            var bytesRead = inputStream.read(data)
+            while (bytesRead != -1) {
+                outputStream.write(data, 0, bytesRead)
+                bytesRead = inputStream.read(data)
+            }
+
+            outputStream.close()
+            inputStream.close()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun countOfFilesExistsInDirectory(fileName: String): Int {
+        val directory = File(PATHtoDOWNLOAD)
+        File(directory, fileName)
+        val files = directory.listFiles()
+        var count = 0
+
+        if (files != null) {
+            for (file in files) {
+                if (file.isFile && file.name.contains(fileName)) {
+                    count++
+                }
+            }
+
+        }
+        return count
+    }
+
+    private fun createDirectoryIfNotExists() {
+        val directory = File(PATHtoDOWNLOAD)
+        if (!directory.exists()) {
+            directory.mkdirs()
+        }
     }
 }
