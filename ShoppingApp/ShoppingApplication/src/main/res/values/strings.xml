@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">University Diploma</string>
+    <string name="app_name">Camera check</string>
 
     <string name="title_use_cases_camera_activity">CameraActivity Use Cases</string>
     <string name="title_capture_with">Capture with:</string>

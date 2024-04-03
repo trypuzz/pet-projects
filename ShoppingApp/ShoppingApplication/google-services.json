@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473924138927",
+    "project_id": "shoppingdiploma",
+    "storage_bucket": "shoppingdiploma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473924138927:android:dfdaf2b21d242516c3215a",
+        "android_client_info": {
+          "package_name": "com.snap.camerakit.sample.simple"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFSnj9MWmWhpWbesTnqpJl710Gm7pKcHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
