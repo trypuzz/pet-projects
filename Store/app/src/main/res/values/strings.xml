@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Store</string>
+    <string name="app_name">POIT Shopping</string>
+    <string name="theRightAddress">The Right Address\n For Shopping\n Anyday</string>
+    <string name="quality">"it is now very easy to reach the\n best quality among the\n products on internet! "</string>
+    <string name="Start">Start</string>
+    <string name="reigster">Register</string>
+    <string name="kelineyt">POIT Shopping</string>
+    <string name="login">Login</string>
+    <string name="search_now">Search Now</string>
 </resources>
