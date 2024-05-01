@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_register_graph"
-    app:startDestination="@id/introductionFragment2">
+    app:startDestination="@id/registerFragment">
     <fragment
         android:id="@+id/introductionFragment2"
-        android:name="com.training.kelineyt.activity.fragments.loginRegister.IntroductionFragment"
+        android:name="com.example.store.fragments.loginRegister.IntroductionFragment"
         android:label="IntroductionFragment"
         tools:layout="@layout/fragment_introduction">
 
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment2"
-        android:name="com.training.kelineyt.activity.fragments.loginRegister.LoginFragment"
+        android:name="com.example.store.fragments.loginRegister.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.training.kelineyt.activity.fragments.loginRegister.RegisterFragment"
+        android:name="com.example.store.fragments.loginRegister.RegisterFragment"
         android:label="RegisterFragment"
         tools:layout="@layout/fragment_register">
 
@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/accountOptionsFragment"
-        android:name="com.training.kelineyt.activity.fragments.loginRegister.AccountOptionsFragment"
+        android:name="com.example.store.fragments.loginRegister.AccountOptionsFragment"
         android:label="AccountOptionsFragment"
         tools:layout="@layout/fragment_account_options">
         <action

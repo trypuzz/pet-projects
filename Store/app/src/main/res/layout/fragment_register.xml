@@ -120,7 +120,8 @@
             app:spinning_bar_color="@color/white"
             app:layout_constraintEnd_toEndOf="@id/guidelineRightLogin"
             app:layout_constraintStart_toStartOf="@id/guidelineLeftLogin"
-            app:layout_constraintTop_toBottomOf="@id/ed_password" />
+            app:layout_constraintTop_toBottomOf="@id/ed_password"
+            />
 
         <ImageView
             android:id="@+id/facebookLogin"
