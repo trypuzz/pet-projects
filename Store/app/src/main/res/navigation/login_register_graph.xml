@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_register_graph"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/introductionFragment2">
     <fragment
         android:id="@+id/introductionFragment2"
         android:name="com.example.store.fragments.loginRegister.IntroductionFragment"
