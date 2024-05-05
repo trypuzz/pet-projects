@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.store.R
 import com.example.store.activities.ShoppingActivity
 import com.example.store.databinding.FragmentLoginBinding
+import com.example.store.dialog.setupBottomSheetDialog
 import com.example.store.util.Resource
 import com.example.store.viewmodel.LoginViewModel
 import com.google.android.material.snackbar.Snackbar
@@ -35,7 +36,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.tvDontHaveAccountRegister.setOnClickListener{
+        binding.tvDontHaveAccountRegister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment2_to_registerFragment)
         }
 
@@ -47,6 +48,33 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             }
 
         }
+
+        binding.tvForgotPasswordLogin.setOnClickListener {
+            setupBottomSheetDialog {
+                email -> viewModel.resetPassword(email)
+            }
+        }
+
+        lifecycleScope.launchWhenStarted {
+            viewModel.resetPassword.collect{
+                when (it) {
+                    is Resource.Loading -> {
+
+                    }
+
+                    is Resource.Success -> {
+                        Snackbar.make(requireView(), "Reset Link was sent", Snackbar.LENGTH_LONG).show()
+                    }
+
+                    is Resource.Error -> {
+                        Snackbar.make(requireView(), "ERROR: ${it.message}", Snackbar.LENGTH_LONG).show()
+                    }
+
+                    else -> Unit
+                }
+            }
+        }
+
         lifecycleScope.launchWhenStarted {
             viewModel.login.collect {
                 when (it) {
