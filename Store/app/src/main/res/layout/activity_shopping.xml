@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.activities.ShoppingActivity">
+    tools:context=".activities.ShoppingActivity">
 
     <fragment
-        android:id="@+id/soppingHostFragment"
+        android:id="@+id/shoppingHostFragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
         app:navGraph="@navigation/shoppng_graph" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -23,9 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/bottom_navigation_background"
-        android:elevation="0dp"
+        android:elevation="10dp"
         app:itemIconTint="@drawable/bottom_nav_item_background"
-        app:itemPaddingBottom="10dp"
+        app:itemPaddingBottom="100dp"
         app:itemPaddingTop="10dp"
         app:itemRippleColor="@color/g_white"
         app:labelVisibilityMode="unlabeled"

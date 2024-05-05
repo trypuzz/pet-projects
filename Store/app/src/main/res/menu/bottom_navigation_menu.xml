@@ -10,6 +10,7 @@
         android:id="@+id/searchFragment"
         android:icon="@drawable/ic_search"
         />
+
  <item android:title="Cart"
         android:id="@+id/cartFragment"
         android:icon="@drawable/ic_cart"

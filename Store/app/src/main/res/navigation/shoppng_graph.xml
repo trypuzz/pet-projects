@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.training.kelineyt.activity.fragments.shopping.HomeFragment"
+        android:name="com.example.store.fragments.shopping.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"/>
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.training.kelineyt.activity.fragments.shopping.CartFragment"
+        android:name="com.example.store.fragments.shopping.CartFragment"
         android:label="CartFragment"
         tools:layout="@layout/fragment_cart"/>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.training.kelineyt.activity.fragments.shopping.ProfileFragment"
+        android:name="com.example.store.fragments.shopping.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile"/>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.training.kelineyt.activity.fragments.shopping.SearchFragment"
+        android:name="com.example.store.fragments.shopping.SearchFragment"
         android:label="SearchFragment"
         tools:layout="@layout/fragment_search"/>
 </navigation>
