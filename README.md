@@ -37,7 +37,3 @@
 [Project Link](https://github.com/trypuzz/pet-projects/tree/main/Notes)  
 [Program Design in Figma](https://www.figma.com/file/kiOENczgNmIp6UOvAt9FYL/freelance-platform-ui-kit-for-figma?node-id=0-1)
 
-
-# Disney Heroes List
-[Project Link](https://github.com/trypuzz/pet-projects/tree/main/Disney-Heroes)  
-
